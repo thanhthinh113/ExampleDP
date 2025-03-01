@@ -14,12 +14,17 @@ public class main {
 //      System.out.println("Instance 1: " + instance1.hashCode());
 //      System.out.println("Instance 2: " + instance2.hashCode());
         
-      LazyInitializedSingleton instance1 = LazyInitializedSingleton.getInstance();
-      LazyInitializedSingleton instance2 = LazyInitializedSingleton.getInstance();
+//      LazyInitializedSingleton instance1 = LazyInitializedSingleton.getInstance();
+//      LazyInitializedSingleton instance2 = LazyInitializedSingleton.getInstance();
+//
+//      // In ra mã hash của hai đối tượng, nếu giống nhau thì chắc chắn chỉ có một thể hiện.
+//      System.out.println("Instance 1: " + instance1.hashCode());
+//      System.out.println("Instance 2: " + instance2.hashCode());
+    	StaticBlockSingleton instance1 = StaticBlockSingleton.getInstance();
+    	StaticBlockSingleton instance2 = StaticBlockSingleton.getInstance();
 
-      // In ra mã hash của hai đối tượng, nếu giống nhau thì chắc chắn chỉ có một thể hiện.
-      System.out.println("Instance 1: " + instance1.hashCode());
-      System.out.println("Instance 2: " + instance2.hashCode());
-        
+        // In ra mã hash của hai đối tượng, nếu giống nhau thì chắc chắn chỉ có một thể hiện.
+        System.out.println("Instance 1: " + instance1.hashCode());
+        System.out.println("Instance 2: " + instance2.hashCode());
     }
 }
