@@ -1,5 +1,9 @@
 package main;
 
+import factory.Computer;
+import factory.PC;
+import factory.Server;
+
 public class main {
     public static void main(String[] args) {
 //        ThreadSafeSingleton instance1 = ThreadSafeSingleton.getInstance();
@@ -26,5 +30,7 @@ public class main {
         // In ra mã hash của hai đối tượng, nếu giống nhau thì chắc chắn chỉ có một thể hiện.
         System.out.println("Instance 1: " + instance1.hashCode());
         System.out.println("Instance 2: " + instance2.hashCode());
+        
+       
     }
 }
