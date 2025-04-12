@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://product-mongo:27017/product_db
+      database: product_db
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: product-group
+      auto-offset-reset: earliest
